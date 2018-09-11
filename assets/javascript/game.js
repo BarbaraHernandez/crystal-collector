@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     var toll;
-    var tollBox = $(".toll");
+    var tollDisplay = $(".toll");
     // arr crystalArray 
     var crystal1btn = $(".crystal-1");
     var crystal2btn = $(".crystal-2");
@@ -17,7 +17,7 @@ $(document).ready(function() {
 
     function setToll() {
         toll = Math.floor(Math.random()*10) * 10 + 50;
-        tollBox.append("<p>" + toll + "</p>");
+        tollDisplay.html("<p>" + toll + "</p>");
     }
 
 //I want to create a for loop but I'm not sure how 
@@ -42,6 +42,7 @@ $(document).ready(function() {
     function win() {
         winTotal ++;
         $(".win-total").text(winTotal);
+        $(toll).empty();
         newGame();
     }
 
