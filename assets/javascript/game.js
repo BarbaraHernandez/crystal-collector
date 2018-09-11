@@ -16,16 +16,16 @@ $(document).ready(function() {
     var lossTotal = 0;
 
     function setToll() {
-        toll = Math.floor(Math.random()*10) * 10 + 50;
+        toll = Math.floor(Math.random()*10) * 10 + 19;
         tollDisplay.html("<p>" + toll + "</p>");
     }
 
 //I want to create a for loop but I'm not sure how 
     function setCrystals() {
-        crystalValue1 = Math.floor(Math.random()*9) + 1;
-        crystalValue2 = Math.floor(Math.random()*9) + 1;
-        crystalValue3 = Math.floor(Math.random()*9) + 1;
-        crystalValue4 = Math.floor(Math.random()*9) + 1;
+        crystalValue1 = Math.floor(Math.random()*11) + 1;
+        crystalValue2 = Math.floor(Math.random()*11) + 1;
+        crystalValue3 = Math.floor(Math.random()*11) + 1;
+        crystalValue4 = Math.floor(Math.random()*11) + 1;
     }
 
     function showTotal () {
@@ -42,13 +42,18 @@ $(document).ready(function() {
     function win() {
         winTotal ++;
         $(".win-total").text(winTotal);
-        $(toll).empty();
+        if(winTotal === 1) {
+            $(".result-text").text("Fantastic! You are free!");
+        } else if (winTotal > 1) {
+            $(".result-text").text("Well Done! But, seriously--you know you can leave, right?")
+        }
         newGame();
     }
 
     function lose (){
         lossTotal++;
         $(".loss-total").text(lossTotal);
+        $(".result-text").text("Oh no! You went over!")
         newGame();
     }
 
@@ -94,5 +99,22 @@ $(document).ready(function() {
 
 
     newGame();
+
+    //Music
+    var moodMusic = document.createElement("audio");
+    moodMusic.setAttribute("src","./assets/Window_Demons.mp3");
+    var musicPlaying = false;
+
+    $(".music").on("click", function() {
+        if (musicPlaying === false){
+            moodMusic.play();
+            musicPlaying = true;
+            console.log("music playing");
+        } else if (musicPlaying === true){
+            moodMusic.pause();
+            musicPlaying = false;
+        }
+    });
+
 
 });

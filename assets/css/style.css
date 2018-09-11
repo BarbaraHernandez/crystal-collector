@@ -12,6 +12,7 @@ h1 {
 
 h2 {
     font-size: 20px;
+    padding: 10px 0px 5px 0px;
 }
 
 h1, h2, h3 {
@@ -19,12 +20,16 @@ h1, h2, h3 {
 }
 
 p {
-    padding: 5px;
+    padding: 5px 10px 5px 10px;
 }
 
 img {
-    margin: 10px;
-    width:100px;
+    margin: 15px 8px 15px 8px;
+    width:90px;
+}
+
+.music {
+    float: right;
 }
 
 .contrast {
@@ -47,13 +52,13 @@ img {
 
 .game-stats {
     max-width: 450px;
-    height: 100px;
+    min-height: 100px;
 }
 
 .crystal-group {
     background-color: #363636;
-    max-width: 500px;
     margin: 25px 0px 25px 0px;
+    max-width: 450px;
 }
 
 .toll-box {
@@ -62,7 +67,7 @@ img {
     float: left;
     font-size: 45px;
     height:100%;
-    max-height: 100px;
+    min-height: 100px;
     text-align: center;
 }
 
@@ -73,7 +78,7 @@ img {
     margin-left: 5px;
     float: left;
     height: 100%;
-    max-height: 100px;
+    min-height: 100px;
 }
 
 .crystal-currency {
@@ -86,4 +91,9 @@ img {
 
 .score-display {
     font-size: 45px;
+}
+
+.result-text {
+    max-width: 235px;
+    height: auto;
 }

@@ -9,10 +9,12 @@ About My Game:
 About My Code:
 
     The important variables in this code are: the toll, the individual crystal values, and the user's running total. 
-    It is important define the function which assigns random value to the toll and crystals. It is also important to user math functions to ensure it is possible to make the user's running total equal the toll. I have multiplied the numbers by ten to make this simpler for the player.
+    It is important define the function which assigns random value to the toll and crystals. I must also ensure that my numbers fall within the range specified by the assignment.
     The next order of business is to define win and loss conditions.
     Once win or loss conditions are met, we must record the result and reset the game.
     On game reset it is important that all of the values reset so that the randomized variables change value and the running total is reset to 0. 
+
+    I also added music, which toggles in and out of paused state but clicking on one icon.
 
 
 
@@ -21,4 +23,7 @@ About Resources used:
     Crystal Images originally from: http://www.samanthacgeorge.com/more-coloring-pages/
     with coloring and other edits by me
 
-    Background from: www.subtlepatterns.com 
+    Background textures from: www.subtlepatterns.com 
+
+    Audio is Window Demons by roljui (https://www.youtube.com/audiolibrary/music)
+
