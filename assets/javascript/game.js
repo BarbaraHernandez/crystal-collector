@@ -35,30 +35,63 @@ $(document).ready(function() {
     function newGame () {
         setToll();
         setCrystals();
-        console.log(crystalValue1);
+        runningTotal = 0;
         showTotal();
+    }
+
+    function win() {
+        winTotal ++;
+        $(".win-total").text(winTotal);
+        newGame();
+    }
+
+    function lose (){
+        lossTotal++;
+        $(".loss-total").text(lossTotal);
+        newGame();
     }
 
     crystal1btn.on("click", function(){
         runningTotal += crystalValue1;
         showTotal();
+        if (runningTotal === toll){
+            win();
+        } else if (runningTotal > toll){
+            lose();
+        }        
     });
 
     crystal2btn.on("click", function(){
         runningTotal += crystalValue2;
         showTotal();
+        if (runningTotal === toll){
+            win();
+        } else if (runningTotal > toll){
+            lose();
+        }
     });
 
     crystal3btn.on("click", function(){
         runningTotal += crystalValue3;
         showTotal();
+        if (runningTotal === toll){
+            win();
+        } else if (runningTotal > toll){
+            lose();
+        }
     });
 
     crystal4btn.on("click", function(){
         runningTotal += crystalValue4;
         showTotal();
+        if (runningTotal === toll){
+            win();
+        } else if (runningTotal > toll){
+            lose();
+        }
     });
-    
+
+
     newGame();
 
 });
