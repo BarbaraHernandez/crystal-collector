@@ -20,9 +20,6 @@ About My Code:
 
 About Resources used:
 
-    Crystal Images originally from: http://www.samanthacgeorge.com/more-coloring-pages/
-    with coloring and other edits by me
-
     Background textures from: www.subtlepatterns.com 
 
     Audio is Window Demons by roljui (https://www.youtube.com/audiolibrary/music)
