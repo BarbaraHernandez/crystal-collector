@@ -31,6 +31,10 @@ img {
     color: #e2f7ff;
 }
 
+.minimal {
+    font-size:12px;
+}
+
 .whisper {
     font-style: italic;
 }
@@ -43,6 +47,7 @@ img {
 
 .game-stats {
     max-width: 450px;
+    height: 100px;
 }
 
 .crystal-group {
@@ -53,6 +58,12 @@ img {
 
 .toll {
     background-color: #363636;
+    width: 200px;
+    float: left;
+    font-size: 45px;
+    height:100%;
+    max-height: 100px;
+    text-align: center;
 }
 
 .game-record {
@@ -60,10 +71,19 @@ img {
     width: auto;
     max-width: 450px;
     margin-left: 5px;
+    float: left;
+    height: 100%;
+    max-height: 100px;
 }
 
 .crystal-currency {
     background-color: #363636;
     max-width: 450px;
     padding: 10px 0px 15px 0px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.score-display {
+    font-size: 45px;
 }
