@@ -14,7 +14,7 @@ About My Code:
     Once win or loss conditions are met, we must record the result and reset the game.
     On game reset it is important that all of the values reset so that the randomized variables change value and the running total is reset to 0. 
 
-    I also added music, which toggles in and out of paused state but clicking on one icon.
+    I also added music, which toggles on and off by clicking on one icon.
 
 
 
@@ -23,4 +23,8 @@ About Resources used:
     Background textures from: www.subtlepatterns.com 
 
     Audio is Window Demons by roljui (https://www.youtube.com/audiolibrary/music)
+
+    Fonts used are Google fonts
+
+    Crystal images all custom made by Barbara Hernandez
 
