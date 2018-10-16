@@ -1,25 +1,32 @@
 $(document).ready(function() {
 
+    //global variables
     var toll;
     var tollDisplay = $(".toll");
-    // arr crystalArray 
-    var crystal1btn = $(".crystal-1");
-    var crystal2btn = $(".crystal-2");
-    var crystal3btn = $(".crystal-3");
-    var crystal4btn = $(".crystal-4");
-    var crystalValue1;
-    var crystalValue2;
-    var crystalValue3;
-    var crystalValue4;
+    var crystalArray = [$(".crystal-1"), $(".crystal-2"), $(".crystal-3"), $(".crystal-4")];
+    var crystalValue;
+    // var crystal1btn = $(".crystal-1");
+    // var crystal2btn = $(".crystal-2");
+    // var crystal3btn = $(".crystal-3");
+    // var crystal4btn = $(".crystal-4");
+    // var crystalValue1;
+    // var crystalValue2;
+    // var crystalValue3;
+    // var crystalValue4;
     var runningTotal = 0;
     var winTotal = 0;
     var lossTotal = 0;
+
+    //functions
 
     function setToll() {
         toll = Math.floor(Math.random()*10) * 10 + 19;
         tollDisplay.html("<p>" + toll + "</p>");
     }
 
+
+    //attempting a for loop
+    
 //I want to create a for loop but I'm not sure how 
     function setCrystals() {
         crystalValue1 = Math.floor(Math.random()*11) + 1;

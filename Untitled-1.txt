@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang=en>
+<head></head>
+<body>
+<script>
+//define variables
+var myNumbers;
+//function to print numbers
+function printNumbers{
+    for myNumbers(i=1, i<=100, i++){
+        if (i % 3 === 0 || i % 5 !=== 0){
+            console.log("Fizz");
+        } else if 
+    }
+}
+//within that if else statemts
+//if multiple of 3 log fizz but not if multiple of 5
+//if multips of 5 log buzz but not if multiple of 3
+//if multiple of 15 log fizzbuzz 
+</script>
+</body>
+</html>

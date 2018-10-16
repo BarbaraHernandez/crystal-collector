@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang=en>
+<head></head>
+<body>
+<script>
+//define function
+function checkPrime (number) {
+    //define for loop -- i is the dividing number. We start with i=2 so we will be checking for all possible dividing numbers greater than 2 and less than the starting number
+    for number (i=2, i < number, i++) {
+        //checking to see if the number can be divided by a given divisor with no remainder, if so "true"
+        if (number % i === 0){
+            return(true);
+        } else { // this will run the following console log for all cases where there IS a remainder after dividing
+            return(false);
+        }
+    }
+}
+</script>
+</body>
+</html>
