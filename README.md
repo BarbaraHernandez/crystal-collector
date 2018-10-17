@@ -1,6 +1,8 @@
 # unit-4-game
 Week 4 JQuery Homework
 
+Link: [Live Demo](https://barbarahernandez.github.io/unit-4-game/)
+
 About My Game:
     I decided to go with a fantasy theme. In the game the player is an unlucky adventurer who has become trapped in the Crystal Cave. The exit is blocked by the Crystal Guardian, who demands "toll" of his own choosing before the player may exit and win the game. As you might expect from crystals, the Crystal Guardian is unyielding and multifaceted, which makes him seem allthemore capricious. He will only accept an exact toll, but also expects the play to intrinsically understand the value of the crystals they are collecting.
 
