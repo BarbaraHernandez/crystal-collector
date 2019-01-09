@@ -5,10 +5,10 @@ $(document).ready(function() {
     var tollDisplay = $(".toll");
     var crystalArray = [$(".crystal-1"), $(".crystal-2"), $(".crystal-3"), $(".crystal-4")];
     var crystalValue;
-    // var crystal1btn = $(".crystal-1");
-    // var crystal2btn = $(".crystal-2");
-    // var crystal3btn = $(".crystal-3");
-    // var crystal4btn = $(".crystal-4");
+    var crystal1btn = $(".crystal-1");
+    var crystal2btn = $(".crystal-2");
+    var crystal3btn = $(".crystal-3");
+    var crystal4btn = $(".crystal-4");
     // var crystalValue1;
     // var crystalValue2;
     // var crystalValue3;
@@ -24,10 +24,6 @@ $(document).ready(function() {
         tollDisplay.html("<p>" + toll + "</p>");
     }
 
-
-    //attempting a for loop
-    
-//I want to create a for loop but I'm not sure how 
     function setCrystals() {
         crystalValue1 = Math.floor(Math.random()*11) + 1;
         crystalValue2 = Math.floor(Math.random()*11) + 1;
@@ -44,6 +40,7 @@ $(document).ready(function() {
         setCrystals();
         runningTotal = 0;
         showTotal();
+        console.log("new game");
     }
 
     function win() {
