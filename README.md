@@ -1,4 +1,4 @@
-# unit-4-game
+# Crystal Collector
 Week 4 JQuery Homework
 
 Link: [Live Demo](https://barbarahernandez.github.io/unit-4-game/)
